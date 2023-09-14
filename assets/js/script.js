@@ -10,8 +10,17 @@ function clickButton() {
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temperature").innerHTML = `${Math.floor(data.main.temp)}°C`;
             document.querySelector(".text-forecast").innerHTML = data.weather[0].description;
-            document.querySelector(".humidity").innerHTML =`Umidade: ${data.main.humidity}%`;
+            document.querySelector(".humidity").innerHTML = `Umidade: ${data.main.humidity}%`;
             document.querySelector(".img-forecast").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             document.querySelector(".img-forecast").style.display = "block";
         })
+        .catch(error => {
+            alert("Cidade não encontrada!"),
+            document.querySelector(".city").innerHTML = " ";
+            document.querySelector(".temperature").innerHTML = " ";
+            document.querySelector(".text-forecast").innerHTML = " ";
+            document.querySelector(".humidity").innerHTML = " ";
+            document.querySelector(".img-forecast").style.display = "none";
+            document.querySelector(".input-city").value = " ";
+        });
 }   
