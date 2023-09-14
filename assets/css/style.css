@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1466133633688-187f0b492390?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY5NDY3NzIwMg&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);
+}
+
+.container {
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    width: 95vw;
+    max-width: 25rem;
+
+}
+
+.input-city {
+    border: none;
+    outline: none;
+    padding: 0.65rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    width: calc(100% - 6.25rem);
+}
+.button-source{
+    border: none;
+    outline: none;
+    padding: 0.65rem;
+    border-radius: 3.15rem;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+
+}
+.img-source{
+    width: 1rem;
+}
+.city{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.img-forecast {
+    width: 4rem;
+    display: none;
+}
+.text-forecast{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300; 
+}
+
+.content-data {
+    margin-top: 1.5rem;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.content-forecast {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.text-forecast {
+    margin-left: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.humidity{
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
